@@ -1,0 +1,1506 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<api>
+<package name="com.android.camera">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="BitmapManager" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="allowThreadDecoding" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="p0" type="java.lang.Thread">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="canThreadDecoding" native="false" return="boolean" static="false" synchronized="true" visibility="public">
+<parameter name="p0" type="java.lang.Thread">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="cancelThreadDecoding" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="p0" type="java.lang.Thread">
+</parameter>
+<parameter name="p1" type="android.content.ContentResolver">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="decodeFileDescriptor" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.FileDescriptor">
+</parameter>
+<parameter name="p1" type="android.graphics.BitmapFactory.Options">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getThumbnail" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.ContentResolver">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="android.graphics.BitmapFactory.Options">
+</parameter>
+<parameter name="p4" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="instance" native="false" return="com.android.camera.BitmapManager" static="true" synchronized="true" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="BitmapManager.1" static="true" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.android.camera.BitmapManager.State&gt;" final="true" name="BitmapManager.State" static="true" visibility="">
+<field deprecated="not deprecated" final="true" name="ALLOW" static="true" transient="false" type="com.android.camera.BitmapManager.State" type-generic-aware="com.android.camera.BitmapManager.State" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CANCEL" static="true" transient="false" type="com.android.camera.BitmapManager.State" type-generic-aware="com.android.camera.BitmapManager.State" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="BitmapManager.ThreadStatus" static="true" visibility="">
+<field deprecated="not deprecated" final="false" name="mOptions" static="false" transient="false" type="android.graphics.BitmapFactory.Options" type-generic-aware="android.graphics.BitmapFactory.Options" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mState" static="false" transient="false" type="com.android.camera.BitmapManager.State" type-generic-aware="com.android.camera.BitmapManager.State" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mThumbRequesting" static="false" transient="false" type="boolean" type-generic-aware="boolean" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="BuildConfig" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BuildConfig" static="false" type="com.android.camera.BuildConfig" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="APPLICATION_ID" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.android.camera&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BUILD_TYPE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;release&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEBUG" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="false" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FLAVOR" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VERSION_CODE" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VERSION_NAME" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="com.android.camera.MonitoredActivity" extends-generic-aware="com.android.camera.MonitoredActivity" final="false" name="CropImage" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CropImage" static="false" type="com.android.camera.CropImage" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCreate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.os.Bundle">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="CropImage.1" static="false" visibility="">
+<implements name="android.view.View.OnClickListener" name-generic-aware="android.view.View.OnClickListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="CropImage.2" static="false" visibility="">
+<implements name="android.view.View.OnClickListener" name-generic-aware="android.view.View.OnClickListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="CropImage.3" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="CropImage.3.1" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="CropImage.4" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="CropImage.5" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="CropImage.6" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="CropImage.6.1" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="CropImageIntentBuilder" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CropImageIntentBuilder" static="false" type="com.android.camera.CropImageIntentBuilder" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="android.net.Uri">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="CropImageIntentBuilder" static="false" type="com.android.camera.CropImageIntentBuilder" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="android.net.Uri">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIntent" native="false" return="android.content.Intent" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setBitmap" native="false" return="com.android.camera.CropImageIntentBuilder" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Bitmap">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCircleCrop" native="false" return="com.android.camera.CropImageIntentBuilder" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDoFaceDetection" native="false" return="com.android.camera.CropImageIntentBuilder" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOutlineCircleColor" native="false" return="com.android.camera.CropImageIntentBuilder" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOutlineColor" native="false" return="com.android.camera.CropImageIntentBuilder" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOutputFormat" native="false" return="com.android.camera.CropImageIntentBuilder" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOutputQuality" native="false" return="com.android.camera.CropImageIntentBuilder" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setScale" native="false" return="com.android.camera.CropImageIntentBuilder" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setScaleUpIfNeeded" native="false" return="com.android.camera.CropImageIntentBuilder" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSourceImage" native="false" return="com.android.camera.CropImageIntentBuilder" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.net.Uri">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="com.android.camera.ImageViewTouchBase" extends-generic-aware="com.android.camera.ImageViewTouchBase" final="false" name="CropImageView" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CropImageView" static="false" type="com.android.camera.CropImageView" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="add" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.android.camera.HighlightView">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="mHighlightViews" static="false" transient="false" type="java.util.ArrayList" type-generic-aware="java.util.ArrayList&lt;com.android.camera.HighlightView&gt;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mMotionHighlightView" static="false" transient="false" type="com.android.camera.HighlightView" type-generic-aware="com.android.camera.HighlightView" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="HighlightView" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="HighlightView" static="false" type="com.android.camera.HighlightView" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="HighlightView" static="false" type="com.android.camera.HighlightView" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="draw" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Canvas">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCropRect" native="false" return="android.graphics.Rect" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHit" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="handleMotion" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hasFocus" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="invalidate" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setFocus" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setHidden" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.android.camera.HighlightView.ModifyMode">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setup" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Matrix">
+</parameter>
+<parameter name="p1" type="android.graphics.Rect">
+</parameter>
+<parameter name="p2" type="android.graphics.RectF">
+</parameter>
+<parameter name="p3" type="boolean">
+</parameter>
+<parameter name="p4" type="boolean">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="DEFAULT_OUTLINE_CIRCLE_COLOR" static="true" transient="false" type="int" type-generic-aware="int" value="-1112874" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEFAULT_OUTLINE_COLOR" static="true" transient="false" type="int" type-generic-aware="int" value="-30208" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GROW_BOTTOM_EDGE" static="true" transient="false" type="int" type-generic-aware="int" value="16" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GROW_LEFT_EDGE" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GROW_NONE" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GROW_RIGHT_EDGE" static="true" transient="false" type="int" type-generic-aware="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GROW_TOP_EDGE" static="true" transient="false" type="int" type-generic-aware="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MOVE" static="true" transient="false" type="int" type-generic-aware="int" value="32" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mCropRect" static="false" transient="false" type="android.graphics.RectF" type-generic-aware="android.graphics.RectF" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mDrawRect" static="false" transient="false" type="android.graphics.Rect" type-generic-aware="android.graphics.Rect" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mIsFocused" static="false" transient="false" type="boolean" type-generic-aware="boolean" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mMatrix" static="false" transient="false" type="android.graphics.Matrix" type-generic-aware="android.graphics.Matrix" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mMode" static="false" transient="false" type="com.android.camera.HighlightView.ModifyMode" type-generic-aware="com.android.camera.HighlightView.ModifyMode" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.android.camera.HighlightView.ModifyMode&gt;" final="true" name="HighlightView.ModifyMode" static="true" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="com.android.camera.HighlightView.ModifyMode" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="values" native="false" return="com.android.camera.HighlightView.ModifyMode[]" static="true" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="Grow" static="true" transient="false" type="com.android.camera.HighlightView.ModifyMode" type-generic-aware="com.android.camera.HighlightView.ModifyMode" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="Move" static="true" transient="false" type="com.android.camera.HighlightView.ModifyMode" type-generic-aware="com.android.camera.HighlightView.ModifyMode" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="None" static="true" transient="false" type="com.android.camera.HighlightView.ModifyMode" type-generic-aware="com.android.camera.HighlightView.ModifyMode" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ImageManager" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ImageManager" static="false" type="com.android.camera.ImageManager" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addImage" native="false" return="android.net.Uri" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.ContentResolver">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="long">
+</parameter>
+<parameter name="p3" type="android.location.Location">
+</parameter>
+<parameter name="p4" type="java.lang.String">
+</parameter>
+<parameter name="p5" type="java.lang.String">
+</parameter>
+<parameter name="p6" type="android.graphics.Bitmap">
+</parameter>
+<parameter name="p7" type="byte[]">
+</parameter>
+<parameter name="p8" type="int[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ensureOSXCompatibleFolder" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBucketId" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEmptyImageListParam" native="false" return="com.android.camera.ImageManager.ImageListParam" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getExifOrientation" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getImageListParam" native="false" return="com.android.camera.ImageManager.ImageListParam" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="com.android.camera.ImageManager.DataLocation">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSingleImageListParam" native="false" return="com.android.camera.ImageManager.ImageListParam" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.net.Uri">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hasStorage" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hasStorage" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isImage" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="com.android.camera.gallery.IImage">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isImageMimeType" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isMediaScannerScanning" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.ContentResolver">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isVideo" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="com.android.camera.gallery.IImage">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="makeEmptyImageList" native="false" return="com.android.camera.gallery.IImageList" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="makeImageList" native="false" return="com.android.camera.gallery.IImageList" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.ContentResolver">
+</parameter>
+<parameter name="p1" type="android.net.Uri">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="makeImageList" native="false" return="com.android.camera.gallery.IImageList" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.ContentResolver">
+</parameter>
+<parameter name="p1" type="com.android.camera.ImageManager.DataLocation">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="makeImageList" native="false" return="com.android.camera.gallery.IImageList" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.ContentResolver">
+</parameter>
+<parameter name="p1" type="com.android.camera.ImageManager.ImageListParam">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="makeSingleImageList" native="false" return="com.android.camera.gallery.IImageList" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.ContentResolver">
+</parameter>
+<parameter name="p1" type="android.net.Uri">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CAMERA_IMAGE_BUCKET_ID" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CAMERA_IMAGE_BUCKET_NAME" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="INCLUDE_IMAGES" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="INCLUDE_VIDEOS" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SORT_ASCENDING" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SORT_DESCENDING" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ImageManager.1" static="true" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.android.camera.ImageManager.DataLocation&gt;" final="true" name="ImageManager.DataLocation" static="true" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="com.android.camera.ImageManager.DataLocation" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="values" native="false" return="com.android.camera.ImageManager.DataLocation[]" static="true" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="ALL" static="true" transient="false" type="com.android.camera.ImageManager.DataLocation" type-generic-aware="com.android.camera.ImageManager.DataLocation" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTERNAL" static="true" transient="false" type="com.android.camera.ImageManager.DataLocation" type-generic-aware="com.android.camera.ImageManager.DataLocation" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="INTERNAL" static="true" transient="false" type="com.android.camera.ImageManager.DataLocation" type-generic-aware="com.android.camera.ImageManager.DataLocation" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NONE" static="true" transient="false" type="com.android.camera.ImageManager.DataLocation" type-generic-aware="com.android.camera.ImageManager.DataLocation" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ImageManager.EmptyImageList" static="true" visibility="">
+<implements name="com.android.camera.gallery.IImageList" name-generic-aware="com.android.camera.gallery.IImageList">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBucketIds" native="false" return="java.util.HashMap&lt;java.lang.String, java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getImageAt" native="false" return="com.android.camera.gallery.IImage" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getImageForUri" native="false" return="com.android.camera.gallery.IImage" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.net.Uri">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getImageIndex" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.android.camera.gallery.IImage">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isEmpty" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeImage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.android.camera.gallery.IImage">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeImageAt" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ImageManager.ImageListParam" static="true" visibility="public">
+<implements name="android.os.Parcelable" name-generic-aware="android.os.Parcelable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ImageManager.ImageListParam" static="false" type="com.android.camera.ImageManager.ImageListParam" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.os.Parcel">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" type-generic-aware="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mBucketId" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mInclusion" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mIsEmptyImageList" static="false" transient="false" type="boolean" type-generic-aware="boolean" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mLocation" static="false" transient="false" type="com.android.camera.ImageManager.DataLocation" type-generic-aware="com.android.camera.ImageManager.DataLocation" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mSingleImageUri" static="false" transient="false" type="android.net.Uri" type-generic-aware="android.net.Uri" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mSort" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ImageManager.ImageListParam.1" static="true" visibility="">
+<implements name="android.os.Parcelable.Creator" name-generic-aware="android.os.Parcelable.Creator">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="createFromParcel" native="false" return="com.android.camera.ImageManager.ImageListParam" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.os.Parcel">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newArray" native="false" return="com.android.camera.ImageManager.ImageListParam[]" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="android.widget.ImageView" extends-generic-aware="android.widget.ImageView" final="false" name="ImageViewTouchBase" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ImageViewTouchBase" static="false" type="com.android.camera.ImageViewTouchBase" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ImageViewTouchBase" static="false" type="com.android.camera.ImageViewTouchBase" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="center" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clear" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getImageViewMatrix" native="false" return="android.graphics.Matrix" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getScale" native="false" return="float" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getScale" native="false" return="float" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="android.graphics.Matrix">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getValue" native="false" return="float" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="android.graphics.Matrix">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="maxZoom" native="false" return="float" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="panBy" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="postTranslate" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setImageBitmapResetBase" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Bitmap">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setImageRotateBitmapResetBase" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.android.camera.RotateBitmap">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setRecycler" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.android.camera.ImageViewTouchBase.Recycler">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="zoomIn" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="zoomIn" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="zoomOut" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="zoomOut" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="zoomTo" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="zoomTo" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="zoomTo" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="zoomToPoint" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="mBaseMatrix" static="false" transient="false" type="android.graphics.Matrix" type-generic-aware="android.graphics.Matrix" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="mBitmapDisplayed" static="false" transient="false" type="com.android.camera.RotateBitmap" type-generic-aware="com.android.camera.RotateBitmap" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mHandler" static="false" transient="false" type="android.os.Handler" type-generic-aware="android.os.Handler" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mSuppMatrix" static="false" transient="false" type="android.graphics.Matrix" type-generic-aware="android.graphics.Matrix" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ImageViewTouchBase.1" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ImageViewTouchBase.2" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="ImageViewTouchBase.Recycler" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="recycle" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Bitmap">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="com.android.camera.NoSearchActivity" extends-generic-aware="com.android.camera.NoSearchActivity" final="false" name="MonitoredActivity" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="MonitoredActivity" static="false" type="com.android.camera.MonitoredActivity" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addLifeCycleListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.android.camera.MonitoredActivity.LifeCycleListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeLifeCycleListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.android.camera.MonitoredActivity.LifeCycleListener">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MonitoredActivity.LifeCycleAdapter" static="true" visibility="public">
+<implements name="com.android.camera.MonitoredActivity.LifeCycleListener" name-generic-aware="com.android.camera.MonitoredActivity.LifeCycleListener">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="MonitoredActivity.LifeCycleAdapter" static="false" type="com.android.camera.MonitoredActivity.LifeCycleAdapter" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="onActivityCreated" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.android.camera.MonitoredActivity">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onActivityDestroyed" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.android.camera.MonitoredActivity">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onActivityStarted" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.android.camera.MonitoredActivity">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onActivityStopped" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.android.camera.MonitoredActivity">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="MonitoredActivity.LifeCycleListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onActivityCreated" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.android.camera.MonitoredActivity">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onActivityDestroyed" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.android.camera.MonitoredActivity">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onActivityStarted" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.android.camera.MonitoredActivity">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onActivityStopped" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.android.camera.MonitoredActivity">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="android.app.Activity" extends-generic-aware="android.app.Activity" final="false" name="NoSearchActivity" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="NoSearchActivity" static="false" type="com.android.camera.NoSearchActivity" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="RotateBitmap" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="RotateBitmap" static="false" type="com.android.camera.RotateBitmap" visibility="public">
+<parameter name="p0" type="android.graphics.Bitmap">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="RotateBitmap" static="false" type="com.android.camera.RotateBitmap" visibility="public">
+<parameter name="p0" type="android.graphics.Bitmap">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBitmap" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHeight" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRotateMatrix" native="false" return="android.graphics.Matrix" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRotation" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getWidth" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isOrientationChanged" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="recycle" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setBitmap" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Bitmap">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setRotation" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="TAG" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;RotateBitmap&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Util" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="Assert" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="closeSilently" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.os.ParcelFileDescriptor">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="closeSilently" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.Closeable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="computeSampleSize" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.BitmapFactory.Options">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createNativeAllocOptions" native="false" return="android.graphics.BitmapFactory.Options" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createSetAsIntent" native="false" return="android.content.Intent" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="com.android.camera.gallery.IImage">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="equals" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNullOnClickListener" native="false" return="android.view.View.OnClickListener" static="true" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="indexOf" native="false" return="int" static="true" synchronized="false" visibility="public">
+<typeParameters>
+<typeParameter name="T"/>
+</typeParameters>
+<parameter name="p0" type="T[]">
+</parameter>
+<parameter name="p1" type="T">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="makeBitmap" native="false" return="android.graphics.Bitmap" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="android.net.Uri">
+</parameter>
+<parameter name="p3" type="android.content.ContentResolver">
+</parameter>
+<parameter name="p4" type="android.os.ParcelFileDescriptor">
+</parameter>
+<parameter name="p5" type="android.graphics.BitmapFactory.Options">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="makeBitmap" native="false" return="android.graphics.Bitmap" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="android.net.Uri">
+</parameter>
+<parameter name="p3" type="android.content.ContentResolver">
+</parameter>
+<parameter name="p4" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="makeBitmap" native="false" return="android.graphics.Bitmap" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="android.os.ParcelFileDescriptor">
+</parameter>
+<parameter name="p3" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="rotate" native="false" return="android.graphics.Bitmap" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Bitmap">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startBackgroundJob" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="com.android.camera.MonitoredActivity">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.String">
+</parameter>
+<parameter name="p3" type="java.lang.Runnable">
+</parameter>
+<parameter name="p4" type="android.os.Handler">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="transform" native="false" return="android.graphics.Bitmap" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Matrix">
+</parameter>
+<parameter name="p1" type="android.graphics.Bitmap">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="boolean">
+</parameter>
+<parameter name="p5" type="boolean">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="DIRECTION_DOWN" static="true" transient="false" type="int" type-generic-aware="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DIRECTION_LEFT" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DIRECTION_RIGHT" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DIRECTION_UP" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NO_RECYCLE_INPUT" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="false" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RECYCLE_INPUT" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="true" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Util.1" static="true" visibility="">
+<implements name="android.view.View.OnClickListener" name-generic-aware="android.view.View.OnClickListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="com.android.camera.MonitoredActivity.LifeCycleAdapter" extends-generic-aware="com.android.camera.MonitoredActivity.LifeCycleAdapter" final="false" name="Util.BackgroundJob" static="true" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="Util.BackgroundJob" static="false" type="com.android.camera.Util.BackgroundJob" visibility="public">
+<parameter name="p0" type="com.android.camera.MonitoredActivity">
+</parameter>
+<parameter name="p1" type="java.lang.Runnable">
+</parameter>
+<parameter name="p2" type="android.app.ProgressDialog">
+</parameter>
+<parameter name="p3" type="android.os.Handler">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Util.BackgroundJob.1" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+</package>
+<package name="com.android.camera.gallery">
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="BaseImage" static="false" visibility="public">
+<implements name="com.android.camera.gallery.IImage" name-generic-aware="com.android.camera.gallery.IImage">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BaseImage" static="false" type="com.android.camera.gallery.BaseImage" visibility="protected">
+<parameter name="p0" type="com.android.camera.gallery.BaseImageList">
+</parameter>
+<parameter name="p1" type="android.content.ContentResolver">
+</parameter>
+<parameter name="p2" type="long">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="android.net.Uri">
+</parameter>
+<parameter name="p5" type="java.lang.String">
+</parameter>
+<parameter name="p6" type="java.lang.String">
+</parameter>
+<parameter name="p7" type="long">
+</parameter>
+<parameter name="p8" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="fullSizeBitmap" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="fullSizeBitmap" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="boolean">
+</parameter>
+<parameter name="p3" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="fullSizeImageData" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="fullSizeImageUri" native="false" return="android.net.Uri" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContainer" native="false" return="com.android.camera.gallery.IImageList" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDataPath" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDateTaken" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDegreesRotated" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHeight" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMimeType" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTitle" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getWidth" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="miniThumbBitmap" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onRemove" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<field deprecated="not deprecated" final="false" name="mContainer" static="false" transient="false" type="com.android.camera.gallery.BaseImageList" type-generic-aware="com.android.camera.gallery.BaseImageList" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mContentResolver" static="false" transient="false" type="android.content.ContentResolver" type-generic-aware="android.content.ContentResolver" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mDataPath" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mId" static="false" transient="false" type="long" type-generic-aware="long" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="mIndex" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mMimeType" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mUri" static="false" transient="false" type="android.net.Uri" type-generic-aware="android.net.Uri" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="BaseImageList" static="false" visibility="public">
+<implements name="com.android.camera.gallery.IImageList" name-generic-aware="com.android.camera.gallery.IImageList">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BaseImageList" static="false" type="com.android.camera.gallery.BaseImageList" visibility="public">
+<parameter name="p0" type="android.content.ContentResolver">
+</parameter>
+<parameter name="p1" type="android.net.Uri">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="contentUri" native="false" return="android.net.Uri" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createCursor" native="false" return="android.database.Cursor" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getImageAt" native="false" return="com.android.camera.gallery.IImage" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getImageForUri" native="false" return="com.android.camera.gallery.IImage" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.net.Uri">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getImageId" native="false" return="long" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="android.database.Cursor">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getImageIndex" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.android.camera.gallery.IImage">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="invalidateCache" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="invalidateCursor" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isEmpty" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="loadImageFromCursor" native="false" return="com.android.camera.gallery.BaseImage" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="android.database.Cursor">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeImage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.android.camera.gallery.IImage">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeImageAt" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sortOrder" native="false" return="java.lang.String" static="false" synchronized="false" visibility="protected">
+</method>
+<field deprecated="not deprecated" final="false" name="mBaseUri" static="false" transient="false" type="android.net.Uri" type-generic-aware="android.net.Uri" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mBucketId" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mContentResolver" static="false" transient="false" type="android.content.ContentResolver" type-generic-aware="android.content.ContentResolver" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mCursor" static="false" transient="false" type="android.database.Cursor" type-generic-aware="android.database.Cursor" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mCursorDeactivated" static="false" transient="false" type="boolean" type-generic-aware="boolean" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mSort" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="IImage" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="fullSizeBitmap" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="fullSizeBitmap" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="boolean">
+</parameter>
+<parameter name="p3" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="fullSizeImageData" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="fullSizeImageUri" native="false" return="android.net.Uri" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getContainer" native="false" return="com.android.camera.gallery.IImageList" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getDataPath" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getDateTaken" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getDegreesRotated" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getHeight" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getMimeType" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getTitle" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getWidth" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isDrm" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isReadonly" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="miniThumbBitmap" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="rotateImageBy" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="thumbBitmap" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="IImageConstants" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="IImageConstants" static="false" type="com.android.camera.gallery.IImageConstants" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="MINI_THUMB_MAX_NUM_PIXELS" static="true" transient="false" type="int" type-generic-aware="int" value="16384" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MINI_THUMB_TARGET_SIZE" static="true" transient="false" type="int" type-generic-aware="int" value="96" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NO_NATIVE" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="false" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NO_ROTATE" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="false" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ROTATE_AS_NEEDED" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="true" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="THUMBNAIL_MAX_NUM_PIXELS" static="true" transient="false" type="int" type-generic-aware="int" value="196608" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="THUMBNAIL_TARGET_SIZE" static="true" transient="false" type="int" type-generic-aware="int" value="320" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UNCONSTRAINED" static="true" transient="false" type="int" type-generic-aware="int" value="-1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="USE_NATIVE" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="true" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="IImageList" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getBucketIds" native="false" return="java.util.HashMap&lt;java.lang.String, java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getImageAt" native="false" return="com.android.camera.gallery.IImage" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getImageForUri" native="false" return="com.android.camera.gallery.IImage" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.net.Uri">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getImageIndex" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.android.camera.gallery.IImage">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isEmpty" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="removeImage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.android.camera.gallery.IImage">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="removeImageAt" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="com.android.camera.gallery.BaseImage" extends-generic-aware="com.android.camera.gallery.BaseImage" final="false" name="Image" static="false" visibility="public">
+<implements name="com.android.camera.gallery.IImage" name-generic-aware="com.android.camera.gallery.IImage">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="Image" static="false" type="com.android.camera.gallery.Image" visibility="public">
+<parameter name="p0" type="com.android.camera.gallery.BaseImageList">
+</parameter>
+<parameter name="p1" type="android.content.ContentResolver">
+</parameter>
+<parameter name="p2" type="long">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="android.net.Uri">
+</parameter>
+<parameter name="p5" type="java.lang.String">
+</parameter>
+<parameter name="p6" type="java.lang.String">
+</parameter>
+<parameter name="p7" type="long">
+</parameter>
+<parameter name="p8" type="java.lang.String">
+</parameter>
+<parameter name="p9" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="isDrm" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isReadonly" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="replaceExifTag" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="rotateImageBy" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDegreesRotated" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="thumbBitmap" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="com.android.camera.gallery.BaseImageList" extends-generic-aware="com.android.camera.gallery.BaseImageList" final="false" name="ImageList" static="false" visibility="public">
+<implements name="com.android.camera.gallery.IImageList" name-generic-aware="com.android.camera.gallery.IImageList">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ImageList" static="false" type="com.android.camera.gallery.ImageList" visibility="public">
+<parameter name="p0" type="android.content.ContentResolver">
+</parameter>
+<parameter name="p1" type="android.net.Uri">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="createCursor" native="false" return="android.database.Cursor" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBucketIds" native="false" return="java.util.HashMap&lt;java.lang.String, java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getImageId" native="false" return="long" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="android.database.Cursor">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="loadImageFromCursor" native="false" return="com.android.camera.gallery.BaseImage" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="android.database.Cursor">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="whereClause" native="false" return="java.lang.String" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="whereClauseArgs" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="protected">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ImageListUber" static="false" visibility="public">
+<implements name="com.android.camera.gallery.IImageList" name-generic-aware="com.android.camera.gallery.IImageList">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ImageListUber" static="false" type="com.android.camera.gallery.ImageListUber" visibility="public">
+<parameter name="p0" type="com.android.camera.gallery.IImageList[]">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBucketIds" native="false" return="java.util.HashMap&lt;java.lang.String, java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getImageAt" native="false" return="com.android.camera.gallery.IImage" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getImageForUri" native="false" return="com.android.camera.gallery.IImage" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.net.Uri">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getImageIndex" native="false" return="int" static="false" synchronized="true" visibility="public">
+<parameter name="p0" type="com.android.camera.gallery.IImage">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isEmpty" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeImage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.android.camera.gallery.IImage">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeImageAt" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ImageListUber.1" static="true" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ImageListUber.AscendingComparator" static="true" visibility="">
+<implements name="java.util.Comparator" name-generic-aware="java.util.Comparator&lt;com.android.camera.gallery.ImageListUber.MergeSlot&gt;">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="compare" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Object">
+</parameter>
+<parameter name="p1" type="java.lang.Object">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ImageListUber.DescendingComparator" static="true" visibility="">
+<implements name="java.util.Comparator" name-generic-aware="java.util.Comparator&lt;com.android.camera.gallery.ImageListUber.MergeSlot&gt;">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="compare" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Object">
+</parameter>
+<parameter name="p1" type="java.lang.Object">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ImageListUber.MergeSlot" static="true" visibility="">
+<constructor deprecated="not deprecated" final="false" name="ImageListUber.MergeSlot" static="false" type="com.android.camera.gallery.ImageListUber.MergeSlot" visibility="public">
+<parameter name="p0" type="com.android.camera.gallery.IImageList">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="next" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="LruCache" static="false" visibility="public">
+<typeParameters>
+<typeParameter name="K"/>
+<typeParameter name="V"/>
+</typeParameters>
+<constructor deprecated="not deprecated" final="false" name="LruCache" static="false" type="com.android.camera.gallery.LruCache" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clear" native="false" return="void" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="get" native="false" return="V" static="false" synchronized="true" visibility="public">
+<parameter name="p0" type="K">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="put" native="false" return="V" static="false" synchronized="true" visibility="public">
+<parameter name="p0" type="K">
+</parameter>
+<parameter name="p1" type="V">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.util.LinkedHashMap" extends-generic-aware="java.util.LinkedHashMap&lt;K, V&gt;" final="false" name="LruCache.1" static="false" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.ref.WeakReference" extends-generic-aware="java.lang.ref.WeakReference&lt;V&gt;" final="false" name="LruCache.Entry" static="true" visibility="">
+<typeParameters>
+<typeParameter name="K"/>
+<typeParameter name="V"/>
+</typeParameters>
+<constructor deprecated="not deprecated" final="false" name="LruCache.Entry" static="false" type="com.android.camera.gallery.LruCache.Entry" visibility="public">
+<parameter name="p0" type="K">
+</parameter>
+<parameter name="p1" type="V">
+</parameter>
+<parameter name="p2" type="java.lang.ref.ReferenceQueue&lt;V&gt;">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="SingleImageList" static="false" visibility="public">
+<implements name="com.android.camera.gallery.IImageList" name-generic-aware="com.android.camera.gallery.IImageList">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="SingleImageList" static="false" type="com.android.camera.gallery.SingleImageList" visibility="public">
+<parameter name="p0" type="android.content.ContentResolver">
+</parameter>
+<parameter name="p1" type="android.net.Uri">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBucketIds" native="false" return="java.util.HashMap&lt;java.lang.String, java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getImageAt" native="false" return="com.android.camera.gallery.IImage" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getImageForUri" native="false" return="com.android.camera.gallery.IImage" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.net.Uri">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getImageIndex" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.android.camera.gallery.IImage">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isEmpty" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeImage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.android.camera.gallery.IImage">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeImageAt" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="UriImage" static="false" visibility="">
+<implements name="com.android.camera.gallery.IImage" name-generic-aware="com.android.camera.gallery.IImage">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="fullSizeBitmap" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="fullSizeBitmap" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="fullSizeBitmap" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="boolean">
+</parameter>
+<parameter name="p3" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="fullSizeImageData" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="fullSizeImageUri" native="false" return="android.net.Uri" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContainer" native="false" return="com.android.camera.gallery.IImageList" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDataPath" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDateTaken" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDegreesRotated" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHeight" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMimeType" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTitle" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getWidth" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isDrm" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isReadonly" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="miniThumbBitmap" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="rotateImageBy" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="thumbBitmap" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="com.android.camera.gallery.BaseImageList" extends-generic-aware="com.android.camera.gallery.BaseImageList" final="false" name="VideoList" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="VideoList" static="false" type="com.android.camera.gallery.VideoList" visibility="public">
+<parameter name="p0" type="android.content.ContentResolver">
+</parameter>
+<parameter name="p1" type="android.net.Uri">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="createCursor" native="false" return="android.database.Cursor" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBucketIds" native="false" return="java.util.HashMap&lt;java.lang.String, java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getImageId" native="false" return="long" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="android.database.Cursor">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="loadImageFromCursor" native="false" return="com.android.camera.gallery.BaseImage" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="android.database.Cursor">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="whereClause" native="false" return="java.lang.String" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="whereClauseArgs" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="protected">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="com.android.camera.gallery.BaseImage" extends-generic-aware="com.android.camera.gallery.BaseImage" final="false" name="VideoObject" static="false" visibility="public">
+<implements name="com.android.camera.gallery.IImage" name-generic-aware="com.android.camera.gallery.IImage">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="VideoObject" static="false" type="com.android.camera.gallery.VideoObject" visibility="protected">
+<parameter name="p0" type="com.android.camera.gallery.BaseImageList">
+</parameter>
+<parameter name="p1" type="android.content.ContentResolver">
+</parameter>
+<parameter name="p2" type="long">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="android.net.Uri">
+</parameter>
+<parameter name="p5" type="java.lang.String">
+</parameter>
+<parameter name="p6" type="java.lang.String">
+</parameter>
+<parameter name="p7" type="long">
+</parameter>
+<parameter name="p8" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="isDrm" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isReadonly" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="rotateImageBy" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="thumbBitmap" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+</class>
+</package>
+</api>

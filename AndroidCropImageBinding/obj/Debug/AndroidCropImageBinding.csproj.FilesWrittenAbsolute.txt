@@ -1,0 +1,6 @@
+/Users/james/Developer/emclient2/EveryoneMessagesClient/Xamarin/EMXamarin/AndroidCropImageBinding/obj/Debug/MonoAndroid,Version=v4.1.AssemblyAttribute.cs
+/Users/james/Developer/emclient2/EveryoneMessagesClient/Xamarin/EMXamarin/AndroidCropImageBinding/obj/Debug/AndroidCropImageBinding.Jars.AndroidCropImage.jar
+/Users/james/Developer/emclient2/EveryoneMessagesClient/Xamarin/EMXamarin/AndroidCropImageBinding/bin/Debug/AndroidCropImageBinding.dll.mdb
+/Users/james/Developer/emclient2/EveryoneMessagesClient/Xamarin/EMXamarin/AndroidCropImageBinding/bin/Debug/AndroidCropImageBinding.dll
+/Users/james/Developer/emclient2/EveryoneMessagesClient/Xamarin/EMXamarin/AndroidCropImageBinding/obj/Debug/AndroidCropImageBinding.dll
+/Users/james/Developer/emclient2/EveryoneMessagesClient/Xamarin/EMXamarin/AndroidCropImageBinding/obj/Debug/AndroidCropImageBinding.dll.mdb
